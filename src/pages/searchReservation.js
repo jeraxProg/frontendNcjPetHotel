@@ -15,7 +15,7 @@ const SearchReservation = () => {
 
     useEffect(() => {
         const fetchReservations = async () => {
-            const response = await fetch('api/reservations')
+            const response = await fetch('https://backend-ncj-pet-hotel.vercel.app/api/reservations')
             const json = await response.json()
            
             if (response.ok) {
